@@ -1,6 +1,6 @@
 # Infrastructure Overview
 
-This is an OpenTofu/Terragrunt infrastructure repository managing AWS cloud resources across multiple environments.
+This is an OpenTofu/Terramate infrastructure repository managing AWS cloud resources across multiple environments.
 
 ## Accounts
 
