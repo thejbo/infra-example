@@ -1,12 +1,3 @@
-module "base_account" {
-  source = "${var.module_root}/base-account"
-
-  tags = local.scope
-}
-output "base_account" {
-  value = module.base_account
-}
-
 module "dns_zones" {
   source   = "${var.module_root}/dns-zones"
   for_each = local.account.dns_zones
