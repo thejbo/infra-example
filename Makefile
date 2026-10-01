@@ -18,7 +18,7 @@ tofu-wrapper: $(bin)/tofu.sh
 $(bin)/tofu.sh:
 	ln -sf "$(PWD)/bin/tofu.sh" "$@"
 
-# https://github.com/opentofu/opentofu/releases
+# OpenTofu
 tofu: $(bin)/tofu
 $(bin)/tofu:
 	wget --quiet --show-progress --timestamping --directory-prefix $(tmp) \
@@ -30,7 +30,6 @@ clean-tofu:
 	rm $(bin)/tofu
 
 # terramate
-# https://github.com/gruntwork-io/terragrunt/releases
 terramate: $(bin)/terramate
 $(bin)/terramate:
 	wget --quiet --show-progress --timestamping --directory-prefix $(tmp) \
