@@ -1,0 +1,11 @@
+on: [push]
+jobs:
+  syntax-check:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      - name: Install deps
+        run: make tofu terramate
+      - name: Check Syntax
+        run: ${HOME}/bin/tofu fmt -check -diff -recursive

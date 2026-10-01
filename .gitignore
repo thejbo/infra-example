@@ -1,0 +1,10 @@
+*.tfstate.backup
+.DS_Store
+**/.terraform
+**/.tf_plugin_cache_dir
+.project
+.idea
+.directory
+.downloads
+**/_*.tofu
+**/_*.tf

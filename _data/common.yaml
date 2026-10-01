@@ -1,0 +1,7 @@
+---
+scope: {}
+
+regions:
+  us-east-1: virginia
+  us-east-2: ohio
+  us-west-2: oregon

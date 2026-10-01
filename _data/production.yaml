@@ -1,0 +1,61 @@
+---
+scope:
+  account: master
+
+account:
+  number: "000000000000"
+  default_region: us-west-2
+  dns_zones:
+    cloudopsgroup.com: {}
+    joshbowers.com: {}
+  acm_certs: []
+
+networks:
+  production:
+    us-east-1:
+      public:
+        cidr: 10.0.0.0/16
+        zones:
+          a: 10.0.0.0/20
+          b: 10.0.16.0/20
+          c: 10.0.32.0/20
+          d: 10.0.48.0/20
+          e: 10.0.64.0/20
+          f: 10.0.80.0/20
+      private:
+        cidr: 10.1.0.0/16
+        zones:
+          a: 10.1.0.0/20
+          b: 10.1.16.0/20
+          c: 10.1.32.0/20
+          d: 10.1.48.0/20
+          e: 10.1.64.0/20
+          f: 10.1.80.0/20
+    us-west-2:
+      public:
+        cidr: 10.24.0.0/16
+        zones:
+          a: 10.24.0.0/20
+          b: 10.24.16.0/20
+          c: 10.24.32.0/20
+          d: 10.24.48.0/20
+      private:
+        cidr: 10.25.0.0/16
+        zones:
+          a: 10.25.0.0/20
+          b: 10.25.16.0/20
+          c: 10.25.32.0/20
+          d: 10.25.48.0/20
+    us-east-2:
+      public:
+        cidr: 10.48.0.0/16
+        zones:
+          a: 10.48.0.0/20
+          b: 10.48.16.0/20
+          c: 10.48.32.0/20
+      private:
+        cidr: 10.49.0.0/16
+        zones:
+          a: 10.49.0.0/20
+          b: 10.49.16.0/20
+          c: 10.49.32.0/20

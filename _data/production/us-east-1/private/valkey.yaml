@@ -1,0 +1,15 @@
+---
+scope:
+  unit: valkey
+
+valkey:
+  cluster_name: "valkey-cluster"
+  description: "Valkey cluster for caching and ephemeral storage"
+  node_type: "cache.t3.micro"
+  number_of_nodes: 2
+  automatic_failover_enabled: true
+  engine_version: "7.0"
+  maintenance_window: "fri:07:00-fri:08:00"
+  snapshot_window: "08:00-09:00"
+  snapshot_retention_limit: 1
+  apply_immediately: true

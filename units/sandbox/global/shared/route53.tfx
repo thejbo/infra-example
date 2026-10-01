@@ -1,0 +1,17 @@
+data "hiera5_json" "dns_zones" {
+  key = "dns_zones"
+}
+
+locals {
+  dns_zones = jsondecode(data.hiera5_json.dns_zones.value)
+}
+
+resource "aws_route53_zone" "zone" {
+  for_each = toset(local.dns_zones)
+  name     = each.value
+  tags     = local.tags
+}
+
+output "dns_zones" {
+  value = aws_route53_zone.zone
+}

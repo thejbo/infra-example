@@ -1,0 +1,9 @@
+---
+scope:
+  account: master
+
+account:
+  number: "999999999999"
+  default_region: us-west-2
+  dns_zones: []
+  acm_certs: []

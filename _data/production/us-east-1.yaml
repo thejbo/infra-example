@@ -1,0 +1,8 @@
+---
+scope:
+  region: us-east-1
+
+account:
+  acm_certs:
+    - picklecrafts.com
+    - cloudopsgroup.com

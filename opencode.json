@@ -1,0 +1,19 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "lsp": {
+    "opentofu": {
+      "command": ["tofu-ls", "serve"],
+      "extensions": [".tf", ".tofu"]
+    }
+  },
+  "formatter": {
+    "terraform": {
+      "command": ["tofu", "run", "--", "fmt", "$FILE"],
+      "extensions": [".tf", ".tofu"]
+    },
+    "terramate": {
+      "command": ["terramate", "format", "$FILE"],
+      "extensions": [".hcl"]
+    }
+  }
+}
